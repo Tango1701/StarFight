@@ -6,39 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/index.css">
     <script src="./JS/ui.js"></script>
-    <title>Star Fight</title>
+    <title>Star Fight - The parabellum Armagedom</title>
 </head>
 <body>
-    <div id="display">
-        <label >Vida</label>
-        <input type="text" id="life" value="30"> 
-        <label>Disparos</label>
-        <input type="text" id="bullets" value="0"> 
-    </div>
+    <div class="fundo">
+        <img src="./IMG/fundo.webp">
+        <div class="banner">
+            <h1>Star Fight</h1>
+            <h2>Seja Bem vindo Fighter!</h2> <br> 
+         
+            <h3>Comandos</h3> <hr>
+           <ol>
+               <li>"Setas" - Movimento</li>
+               <li>"barra de espaços" - Disparar</li>
+               <li>"Q" - Canhão da esquerda</li>
+               <li>"w" - Canhão do centro</li>
+               <li>"E" - Canhão da direita</li>
+               <li>"1" - Camera frontal</li>
+               <li>"2" - Camera lateral</li>
+               <li>"3" - Camera Topo</li>
+               <li>"4" - Camera Giratória</li>
+               <li>"5" - (Em falta no momento)</li>
+               <li>"7 8 9 0" - Holofotes da Cena</li>
+               <li>"L" - luzes de todo o cenário (Direct)</li>
+           </ol>
+           <br> <br>
 
-    <ul id="opcoes">
-        <h2>O jogo Terminou</h2>
-        <button onclick="recarregar()">Tentar Novamente</button>
-        <button onclick="sair()">Sair</button>
-    </ul>
-    <div id="pausa"> 
-        <h2>Jogo em Pausa</h2>
-        <button onclick="recarregar()">Reiniciar Jogo</button>
-        <button onclick="sair()">Sair</button>
+           <button onclick="jogar()">Jogar</button>
+        </div>
+
+
     </div>
-    <script src="JS/three.js"></script>
-	<script src="JS/jogo.js"></script>
-	<script src="JS/blocks.js"></script>
-    <script src="JS/boundingBoxCollisions.js"></script>
-	<script src="JS/personagem.js"></script>
-	<script src="JS/luzes.js"></script>
-	<script>
-        var camera1, camera2, camera3, camera4, camera5, canhaoP, canhaoE, canhaoD, selecionado = "c";
-        var movel = false, onAir = false, follow = false
-        var paused = false
-        var c = createCamera(1);
-        init();
-        animate();
-    </script>
 </body>
 </html>

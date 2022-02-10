@@ -16,11 +16,11 @@ function recarregar(){
 }
 
 function jogar(){
-    document.location.href = "index.html"
+    document.location.href = "jogo.html"
 }
 
 function sair(){
-    document.location.href = "ui.html"
+    document.location.href = "index.html"
 }
 
 function MenuPausa(){

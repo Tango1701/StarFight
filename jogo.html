@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./JS/ui.js"></script>
+    <title>Star Fight</title>
+</head>
+<body>
+    <div id="display">
+        <label >Vida</label>
+        <input type="text" id="life" value="30"> 
+        <label>Disparos</label>
+        <input type="text" id="bullets" value="0"> 
+    </div>
+
+    <ul id="opcoes">
+        <h2>O jogo Terminou</h2>
+        <button onclick="recarregar()">Tentar Novamente</button>
+        <button onclick="sair()">Sair</button>
+    </ul>
+    <div id="pausa"> 
+        <h2>Jogo em Pausa</h2>
+        <button onclick="recarregar()">Reiniciar Jogo</button>
+        <button onclick="sair()">Sair</button>
+    </div>
+    <script src="JS/three.js"></script>
+	<script src="JS/jogo.js"></script>
+	<script src="JS/blocks.js"></script>
+    <script src="JS/boundingBoxCollisions.js"></script>
+	<script src="JS/personagem.js"></script>
+	<script src="JS/luzes.js"></script>
+	<script>
+        var camera1, camera2, camera3, camera4, camera5, canhaoP, canhaoE, canhaoD, selecionado = "c";
+        var movel = false, onAir = false, follow = false
+        var paused = false
+        var c = createCamera(1);
+        init();
+        animate();
+    </script>
+</body>
+</html>
