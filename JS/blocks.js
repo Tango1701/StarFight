@@ -18,10 +18,6 @@ function cuboCriacao(){
     var cubeMaterial1 = new THREE.MeshBasicMaterial({color:"#00BFFF", wireframe: false});
     cube1 = new THREE.Mesh(cubeGeometry1, cubeMaterial1);
 
-    // Criar o Superior
-    var cubeGeometry2 = new THREE.BoxGeometry(33, 110, 5);
-    var cubeMaterial2 = new THREE.MeshPhongMaterial({color:"#00BFFF", wireframe: false});
-    cube2 = new THREE.Mesh(cubeGeometry2, cubeMaterial2);
     //Os parametros da função set referente ao position do cubo são as coordenadas x,y,z
 
     //------ Blocos a Direita -----
@@ -59,6 +55,5 @@ function cuboCriacao(){
 
     //Adiconar os cubos a cena
     scene.add(cube1);
-    scene.add(cube2);
     
 }
