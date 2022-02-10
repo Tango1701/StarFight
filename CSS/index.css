@@ -1,0 +1,132 @@
+*{margin: 0; padding: 0;}
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#opcoes{
+    height: 200px;
+    width: 300px;
+    background-color: rgba(248, 217, 217, 0.7);
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+#opcoes button{
+    height: 50px;
+    width: 150px;
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+.fundo{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    justify-content: center;
+    display: flex;
+}
+.fundo img{
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+}
+
+.banner{
+    height: 550px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    z-index: 3;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    border-radius: 1%;
+}
+
+.banner button{
+    height: 50px;
+    width: 150px;
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 206);
+}
+
+#pausa{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    z-index: 4;
+    display: none;
+}
+
+#pausa button{
+    height: 50px;
+    width: 150px;
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+#display{
+    height: 80px;
+    width: 20%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 3;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    top: 1%;
+    right: 1%;
+    /* display: none; */
+    border-radius: 1%;
+    font-family: 'Franklin Gothic Medium';
+}
+#display input[type="text"]{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    width: 20%;
+    margin-left: 4%;
+}
+#display label{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
